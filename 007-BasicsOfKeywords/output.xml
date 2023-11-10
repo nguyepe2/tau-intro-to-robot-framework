@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.2 on win32)" generated="20231010 19:19:04.474" rpa="false" schemaversion="4">
+<suite id="s1" name="Keyword-Basics" source="C:\Users\nguye\robot-framework-testautomationu-2022\007-BasicsOfKeywords\keyword-basics.robot">
+<test id="s1-t1" name="Check invoice manager page" line="5">
+<kw name="Comment" library="BuiltIn">
+<arg>We're learning how to create a custom keyword.</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20231010 19:19:04.617" endtime="20231010 19:19:04.617"/>
+</kw>
+<kw name="Navigate to homepage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://inv.beaufortfairmont.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231010 19:19:04.617" level="INFO">Opening browser 'chrome' to base url 'http://inv.beaufortfairmont.com/'.</msg>
+<status status="PASS" starttime="20231010 19:19:04.617" endtime="20231010 19:19:07.549"/>
+</kw>
+<status status="PASS" starttime="20231010 19:19:04.617" endtime="20231010 19:19:07.549"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Invoice Manager</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231010 19:19:07.565" level="INFO">Current page contains text 'Invoice Manager'.</msg>
+<status status="PASS" starttime="20231010 19:19:07.549" endtime="20231010 19:19:07.565"/>
+</kw>
+<status status="PASS" starttime="20231010 19:19:04.617" endtime="20231010 19:19:07.573"/>
+</test>
+<status status="PASS" starttime="20231010 19:19:04.474" endtime="20231010 19:19:07.575"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Keyword-Basics">Keyword-Basics</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

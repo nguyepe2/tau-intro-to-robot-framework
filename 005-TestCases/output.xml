@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.2 on win32)" generated="20231011 18:51:21.008" rpa="false" schemaversion="4">
+<suite id="s1" name="First-Test-Case" source="C:\Users\nguye\robot-framework-testautomationu-2022\005-TestCases\first-test-case.robot">
+<test id="s1-t1" name="Check invoice manager page" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://inv.beaufortfairmont.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231011 18:51:21.176" level="INFO">Opening browser 'chrome' to base url 'http://inv.beaufortfairmont.com/'.</msg>
+<status status="PASS" starttime="20231011 18:51:21.176" endtime="20231011 18:51:34.889"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Invoice Manager</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231011 18:51:34.909" level="INFO">Current page contains text 'Invoice Manager'.</msg>
+<status status="PASS" starttime="20231011 18:51:34.889" endtime="20231011 18:51:34.909"/>
+</kw>
+<status status="PASS" starttime="20231011 18:51:21.175" endtime="20231011 18:51:34.909"/>
+</test>
+<status status="PASS" starttime="20231011 18:51:21.008" endtime="20231011 18:51:34.909"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="First-Test-Case">First-Test-Case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

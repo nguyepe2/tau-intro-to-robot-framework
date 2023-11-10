@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.2 on win32)" generated="20231010 19:21:39.051" rpa="false" schemaversion="4">
+<suite id="s1" name="Example-Return-Values" source="C:\Users\nguye\robot-framework-testautomationu-2022\032-ReturnValuesForKeywords\example-return-values.robot">
+<test id="s1-t1" name="My Addition Test" line="4">
+<kw name="Add">
+<var>${sum}</var>
+<arg>2</arg>
+<arg>3</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${value}</var>
+<arg>${value1} + ${value2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231010 19:21:39.074" level="INFO">${value} = 5</msg>
+<status status="PASS" starttime="20231010 19:21:39.074" endtime="20231010 19:21:39.074"/>
+</kw>
+<msg timestamp="20231010 19:21:39.075" level="INFO">${sum} = 5</msg>
+<status status="PASS" starttime="20231010 19:21:39.074" endtime="20231010 19:21:39.075"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>5</arg>
+<arg>${sum}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<msg timestamp="20231010 19:21:39.075" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20231010 19:21:39.075" endtime="20231010 19:21:39.075"/>
+</kw>
+<status status="PASS" starttime="20231010 19:21:39.072" endtime="20231010 19:21:39.076"/>
+</test>
+<test id="s1-t2" name="My Test Case" line="8">
+<kw name="Set Variable" library="BuiltIn">
+<var>${nickName}</var>
+<arg>Paul</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231010 19:21:39.078" level="INFO">${nickName} = Paul</msg>
+<status status="PASS" starttime="20231010 19:21:39.078" endtime="20231010 19:21:39.078"/>
+</kw>
+<kw name="Print Profile">
+<arg>${nickName}</arg>
+<arg>Merrill</arg>
+<arg>Trainer</arg>
+<arg>dpaulmerrill</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n__Profile__</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231010 19:21:39.078" endtime="20231010 19:21:39.079"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>First Name: "${firstName}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231010 19:21:39.079" endtime="20231010 19:21:39.079"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Last Name: "${lastName}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231010 19:21:39.079" endtime="20231010 19:21:39.080"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Title: "${title}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231010 19:21:39.080" endtime="20231010 19:21:39.080"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Twitter Handle: "${twitterHandle}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231010 19:21:39.080" endtime="20231010 19:21:39.080"/>
+</kw>
+<status status="PASS" starttime="20231010 19:21:39.078" endtime="20231010 19:21:39.080"/>
+</kw>
+<kw name="Change Nickname">
+<var>${nickName}</var>
+<arg>${nickName}</arg>
+<arg>Davie</arg>
+<msg timestamp="20231010 19:21:39.081" level="INFO">${nickName} = Davie</msg>
+<status status="PASS" starttime="20231010 19:21:39.081" endtime="20231010 19:21:39.081"/>
+</kw>
+<kw name="Print Profile">
+<arg>${nickName}</arg>
+<arg>Merrill</arg>
+<arg>Trainer</arg>
+<arg>dpaulmerrill</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n__Profile__</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231010 19:21:39.081" endtime="20231010 19:21:39.082"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>First Name: "${firstName}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231010 19:21:39.082" endtime="20231010 19:21:39.082"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Last Name: "${lastName}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231010 19:21:39.082" endtime="20231010 19:21:39.082"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Title: "${title}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231010 19:21:39.082" endtime="20231010 19:21:39.082"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Twitter Handle: "${twitterHandle}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231010 19:21:39.082" endtime="20231010 19:21:39.083"/>
+</kw>
+<status status="PASS" starttime="20231010 19:21:39.081" endtime="20231010 19:21:39.083"/>
+</kw>
+<status status="PASS" starttime="20231010 19:21:39.077" endtime="20231010 19:21:39.083"/>
+</test>
+<status status="PASS" starttime="20231010 19:21:39.053" endtime="20231010 19:21:39.084"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Example-Return-Values">Example-Return-Values</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
